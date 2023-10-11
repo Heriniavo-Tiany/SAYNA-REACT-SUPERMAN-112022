@@ -6,7 +6,7 @@ const Eshop = () => {
     return (
         <>
             <Header/>
-            {/*<Catalogue/>*/}
+            <Catalogue/>
 
             <footer className="footer">
                 <div className="flex-col flex">
