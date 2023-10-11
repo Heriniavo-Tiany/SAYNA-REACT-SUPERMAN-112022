@@ -29,7 +29,7 @@ const Catalogue = () => {
                         {items.map((item, index) => (
                             <div className="col-md-4">
                                 <div className="card">
-                                    <img src={`../assets/images/article_${index}.png`} className="card-img-top" alt="..."/>
+                                    <img src={`${process.env.PUBLIC_URL}/assets/images/article_${index}.png`} className="card-img-top" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">{item.title}</h5>
                                         <p className="card-text">{item.price} {item.price2}</p>
@@ -41,7 +41,7 @@ const Catalogue = () => {
                         {items.map((item, index) => (
                             <div className="col-md-4">
                                 <div className="card">
-                                    <img src={`../assets/images/article_${index}.png`} className="card-img-top" alt="..."/>
+                                    <img src={`${process.env.PUBLIC_URL}/assets/images/article_${index}.png`} className="card-img-top" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">{item.title}</h5>
                                         <p className="card-text">{item.price} {item.price2}</p>
