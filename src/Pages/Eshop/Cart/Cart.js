@@ -35,6 +35,14 @@ const Cart = () => {
                 </ul>
             </nav>
             <div className="cart">
+                <nav style={{'--bs-breadcrumb-divider': '>'}} aria-label="breadcrumb">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item white"><a href="/eshop">Eshop &#x203A; </a></li>
+
+                        <li className="breadcrumb-item active white" aria-current="page">Cart</li>
+                    </ol>
+                </nav>
+
                 <h3 className="adventure">Récapitulatif du panier</h3>
                 <div className="text-center center">
                 {cartItems.map((product, index) => (

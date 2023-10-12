@@ -226,3 +226,7 @@ footer .flex p img {
 .card {
     border-radius: 0;
 }
+
+.white {
+    color: #FFFFFF !important;
+}
