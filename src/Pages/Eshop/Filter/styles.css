@@ -8,8 +8,8 @@
 }
 
 .Filter {
-    width: 25%;
-    min-width: 300px;
+    /*width: 25%;*/
+    min-width: 200px;
     padding-top: 100px;
     padding-left: 20px;
     display: flex;

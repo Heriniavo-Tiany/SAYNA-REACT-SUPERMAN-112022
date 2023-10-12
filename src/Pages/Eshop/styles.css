@@ -146,10 +146,11 @@ p {
 }
 
 .demarrer {
+    width: 100%;
     margin-top: 40px;
-    border-radius: 0;
+    border-radius: 16px;
     padding: 10px 10px;
-    background: linear-gradient(to left, rgba(137, 0, 8, 0.6) 0%, rgba(252, 232, 216, 0.4) 100%);
+    background: #07338C;
     color: white;
     margin-bottom: 50px;
 }

@@ -52,7 +52,7 @@ const Catalogue = () => {
                                         <p className="card-text">{item.price} {item.price2}</p>
                                     </div>
                                 </div>
-                                <button className="demarrer">AJOUTER AU PANIER</button>
+                                <button  className="demarrer">AJOUTER AU PANIER</button>
                             </div>
                         ))}
                     </div>
