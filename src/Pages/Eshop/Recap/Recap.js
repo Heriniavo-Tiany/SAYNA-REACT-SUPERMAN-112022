@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import CartItem from './cartItem';
+import RecapItem from './RecapItem';
 import './styles.css'
 
-const Cart = () => {
+const Recap = () => {
     const retour = useNavigate();
     const [cartItems, setCartItems] = useState([]);
     const [total, setTotal] = useState(0);
@@ -38,15 +38,15 @@ const Cart = () => {
                 <nav style={{'--bs-breadcrumb-divider': '>'}} aria-label="breadcrumb">
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item white"><a href="/eshop">Eshop &#x203A; </a></li>
-
-                        <li className="breadcrumb-item active white" aria-current="page">Panier</li>
+                        <li className="breadcrumb-item white" aria-current="page"><a href="/cart">Panier &#x203A; </a></li>
+                        <li className="breadcrumb-item active white" aria-current="page">Récapitulatif de la commande</li>
                     </ol>
                 </nav>
 
-                <h3 className="adventure">Récapitulatif du panier</h3>
+                <h3 className="adventure">COMMANDE</h3>
                 <div className="text-center center">
                 {cartItems.map((product, index) => (
-                    <CartItem data={product} key={index} />
+                    <RecapItem data={product} key={index} />
                 ))}
                 </div>
                 <div className="subTotal">
@@ -56,7 +56,7 @@ const Cart = () => {
                     <div className="cartButton">
                         <button className="blue-btn adventure" onClick={() => retour('/Eshop')}>Continuer mes achats</button>
                         <button className="blue-btn adventure">
-                            <Link to="/recap"><span className="passerCommande">Passer la commande</span></Link>
+                            <Link to="/Eshop/OrderHistory"><span className="passerCommande">Passer la commande</span></Link>
                         </button>
                     </div>
                 ) : (
@@ -88,4 +88,4 @@ const Cart = () => {
     );
 };
 
-export default Cart;
+export default Recap;
