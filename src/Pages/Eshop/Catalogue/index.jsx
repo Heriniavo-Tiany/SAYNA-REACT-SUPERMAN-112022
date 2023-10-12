@@ -33,26 +33,39 @@ const Catalogue = () => {
                     <div className="row">
                         {items.map((item, index) => (
                             <div className="col-md-4">
-                                <div className="card">
-                                    <img src={`${process.env.PUBLIC_URL}/assets/images/article_${index}.png`} className="card-img-top" alt="..." />
+                                <div className="card position-relative">
+                                    <div className="icon-wrapper">
+                                        <img src='/assets/icones/coeur.svg' alt="icone caddy" />
+                                    </div>
+                                    <img src={`${process.env.PUBLIC_URL}/assets/images/article_${index}.png`}
+                                         className="card-img-top" alt="..."/>
                                     <div className="card-body">
                                         <h5 className="card-title">{item.title}</h5>
-                                        <p className="card-text"> <strike>{item.price}</strike> <strong>{item.price2}</strong></p>
+                                        <p className="card-text">
+                                            <strike>{item.price}</strike> <strong>{item.price2}</strong>
+                                        </p>
                                     </div>
                                 </div>
                                 <button className="demarrer adventure">AJOUTER AU PANIER</button>
                             </div>
+
                         ))}
                         {items.map((item, index) => (
                             <div className="col-md-4">
-                                <div className="card">
-                                    <img src={`${process.env.PUBLIC_URL}/assets/images/article_${index}.png`} className="card-img-top" alt="..." />
+                                <div className="card position-relative">
+                                    <div className="icon-wrapper">
+                                        <img src='/assets/icones/coeur.svg' alt="icone caddy" />
+                                    </div>
+                                    <img src={`${process.env.PUBLIC_URL}/assets/images/article_${index}.png`}
+                                         className="card-img-top" alt="..."/>
                                     <div className="card-body">
                                         <h5 className="card-title">{item.title}</h5>
-                                        <p className="card-text"> <strike>{item.price}</strike> <strong>{item.price2}</strong></p>
+                                        <p className="card-text">
+                                            <strike>{item.price}</strike> <strong>{item.price2}</strong>
+                                        </p>
                                     </div>
                                 </div>
-                                <button  className="demarrer adventure">AJOUTER AU PANIER</button>
+                                <button className="demarrer adventure">AJOUTER AU PANIER</button>
                             </div>
                         ))}
                     </div>
