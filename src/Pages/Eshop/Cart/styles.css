@@ -99,3 +99,22 @@
 .cart h4 {
     color: #890008;
 }
+
+.cartItems {
+    border: #FFFFFF 1px solid;
+}
+
+.blue-btn {
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 16px;
+    padding: 10px 10px;
+    background: linear-gradient(to right, #07338C 50%, #B4202E 100%);
+    color: white;
+    margin-bottom: 50px;
+}
+
+.passerCommande {
+    color: #FFFFFF;
+    text-decoration: none ;
+}

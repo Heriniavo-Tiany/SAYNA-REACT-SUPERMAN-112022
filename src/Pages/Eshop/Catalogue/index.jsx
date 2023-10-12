@@ -15,10 +15,10 @@ const Catalogue = () => {
         {title: "Mug", price: "", price2: "16€"},
     ];
 
-    const addItemToCart = (item) => {
+    const addItemToCart = (item, index) => {
         // Retrieve the cart from sessionStorage or initialize an empty array
         const cart = JSON.parse(sessionStorage.getItem('cart')) || [];
-
+        item.index = index;
         // Add the selected item to the cart
         cart.push(item);
 
@@ -58,7 +58,7 @@ const Catalogue = () => {
                                 </div>
                                 <button
                                     className="demarrer adventure"
-                                    onClick={() => addItemToCart(item)} // Add item to cart on button click
+                                    onClick={() => addItemToCart(item, index)} // Add item to cart on button click
                                 >
                                     AJOUTER AU PANIER
                                 </button>
@@ -82,7 +82,7 @@ const Catalogue = () => {
                                 </div>
                                 <button
                                     className="demarrer adventure"
-                                    onClick={() => addItemToCart(item)} // Add item to cart on button click
+                                    onClick={() => addItemToCart(item, index)} // Add item to cart on button click
                                 >
                                     AJOUTER AU PANIER
                                 </button>

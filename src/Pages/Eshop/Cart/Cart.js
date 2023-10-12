@@ -17,7 +17,7 @@ const Cart = () => {
 
     useEffect(() => {
         // Calculate the total when cartItems change
-        const newTotal = cartItems.reduce((acc, item) => acc + parseFloat(item.price), 0);
+        const newTotal = cartItems.reduce((acc, item) => acc + parseFloat(item.price2), 0);
         setTotal(newTotal);
     }, [cartItems]);
 
@@ -35,18 +35,20 @@ const Cart = () => {
                 </ul>
             </nav>
             <div className="cart">
-                <h3>Récapitulatif du panier</h3>
+                <h3 className="adventure">Récapitulatif du panier</h3>
+                <div className="text-center center">
                 {cartItems.map((product, index) => (
                     <CartItem data={product} key={index} />
                 ))}
+                </div>
                 <div className="subTotal">
                     <p>SOUS TOTAL <b>{total} $</b></p>
                 </div>
                 {total > 0 ? (
                     <div className="cartButton">
-                        <button onClick={() => retour('/Eshop')}>Continuer mes achats</button>
-                        <button>
-                            <Link to="/Eshop/OrderHistory">Passer la commande</Link>
+                        <button className="blue-btn adventure" onClick={() => retour('/Eshop')}>Continuer mes achats</button>
+                        <button className="blue-btn adventure">
+                            <Link to="/Eshop/OrderHistory"><span className="passerCommande">Passer la commande</span></Link>
                         </button>
                     </div>
                 ) : (
