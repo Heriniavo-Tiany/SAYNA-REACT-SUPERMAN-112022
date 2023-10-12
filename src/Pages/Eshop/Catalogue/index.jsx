@@ -15,12 +15,22 @@ const Catalogue = () => {
         {title: "Mug", price: "", price2: "16€"},
     ];
 
+    const addItemToCart = (item) => {
+        // Retrieve the cart from sessionStorage or initialize an empty array
+        const cart = JSON.parse(sessionStorage.getItem('cart')) || [];
+
+        // Add the selected item to the cart
+        cart.push(item);
+
+        // Update the cart in sessionStorage
+        sessionStorage.setItem('cart', JSON.stringify(cart));
+    };
 
     return (
         <div id="divGame">
             <img id="arrowDown" src="/assets/icones/flèche_down_header.png" alt=""/>
             <div className="d-flex justify-content-end">
-                <Link to="Cart" className="ml-auto">
+                <Link to="/cart" className="ml-auto">
                     <img src='/assets/icones/icone_1.png' alt="icone caddy" />
                 </Link>
             </div>
@@ -46,7 +56,12 @@ const Catalogue = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <button className="demarrer adventure">AJOUTER AU PANIER</button>
+                                <button
+                                    className="demarrer adventure"
+                                    onClick={() => addItemToCart(item)} // Add item to cart on button click
+                                >
+                                    AJOUTER AU PANIER
+                                </button>
                             </div>
 
                         ))}
@@ -65,7 +80,12 @@ const Catalogue = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <button className="demarrer adventure">AJOUTER AU PANIER</button>
+                                <button
+                                    className="demarrer adventure"
+                                    onClick={() => addItemToCart(item)} // Add item to cart on button click
+                                >
+                                    AJOUTER AU PANIER
+                                </button>
                             </div>
                         ))}
                     </div>
