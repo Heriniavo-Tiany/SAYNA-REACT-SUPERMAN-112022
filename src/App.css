@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Cantarell;
+    src: url('/src/assets/fonts/Cantarell.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Adventure;
+    src: url('/src/assets/fonts/Adventure.otf') format('opentype');
+}
+
+.cantarell {
+    font-family: Cantarell, Arial, sans-serif;
+}
+
+.adventure {
+    font-family: Adventure, Arial, sans-serif;
+}

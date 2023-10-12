@@ -37,10 +37,10 @@ const Catalogue = () => {
                                     <img src={`${process.env.PUBLIC_URL}/assets/images/article_${index}.png`} className="card-img-top" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">{item.title}</h5>
-                                        <p className="card-text">{item.price} <strike>{item.price2}</strike></p>
+                                        <p className="card-text"> <strike>{item.price}</strike> <strong>{item.price2}</strong></p>
                                     </div>
                                 </div>
-                                <button className="demarrer">AJOUTER AU PANIER</button>
+                                <button className="demarrer adventure">AJOUTER AU PANIER</button>
                             </div>
                         ))}
                         {items.map((item, index) => (
@@ -49,10 +49,10 @@ const Catalogue = () => {
                                     <img src={`${process.env.PUBLIC_URL}/assets/images/article_${index}.png`} className="card-img-top" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">{item.title}</h5>
-                                        <p className="card-text">{item.price} {item.price2}</p>
+                                        <p className="card-text"> <strike>{item.price}</strike> <strong>{item.price2}</strong></p>
                                     </div>
                                 </div>
-                                <button  className="demarrer">AJOUTER AU PANIER</button>
+                                <button  className="demarrer adventure">AJOUTER AU PANIER</button>
                             </div>
                         ))}
                     </div>

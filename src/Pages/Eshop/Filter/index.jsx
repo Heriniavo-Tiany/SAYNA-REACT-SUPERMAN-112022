@@ -9,7 +9,7 @@ const Filter = () => {
     return (
         <div className="containerFilter">
             <div className="Filter">
-                <h1>Filtres</h1>
+                <h1 className="adventure">Filtres</h1>
                 <label htmlFor="prix">Prix</label>
                 <input type="range" id="prix" name="prix" min="0" max="200" step="1" />
 

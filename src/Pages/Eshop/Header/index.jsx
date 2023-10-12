@@ -15,7 +15,7 @@ const Header = () => {
             </nav>
             <div>
                 <h1 className="white"></h1>
-                <h1 className="white">ENVIE D’UN SLIP JAUNE ?</h1>
+                <h1 className="white adventure text-xl">ENVIE D’UN SLIP JAUNE ?</h1>
             </div>
         </section>
     )
