@@ -128,3 +128,13 @@
     font-size: larger;
     font-weight: bold;
 }
+
+.purple-btn {
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 16px;
+    padding: 10px 10px;
+    background: linear-gradient(to right, #07338C 0%, #B4202E50 100%);
+    color: white;
+    margin-bottom: 50px;
+}

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import React, {useEffect, useState} from 'react';
+import {useNavigate} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import RecapItem from './RecapItem';
 import './styles.css'
 
@@ -38,33 +38,72 @@ const Recap = () => {
                 <nav style={{'--bs-breadcrumb-divider': '>'}} aria-label="breadcrumb">
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item white"><a href="/eshop">Eshop &#x203A; </a></li>
-                        <li className="breadcrumb-item white" aria-current="page"><a href="/cart">Panier &#x203A; </a></li>
-                        <li className="breadcrumb-item active white" aria-current="page">Récapitulatif de la commande</li>
+                        <li className="breadcrumb-item white" aria-current="page"><a href="/cart">Panier &#x203A; </a>
+                        </li>
+                        <li className="breadcrumb-item active white" aria-current="page">Récapitulatif de la commande
+                        </li>
                     </ol>
                 </nav>
 
                 <h3 className="adventure">COMMANDE</h3>
                 <div className="text-center center">
-                {cartItems.map((product, index) => (
-                    <RecapItem data={product} key={index} />
-                ))}
+                    {cartItems.map((product, index) => (
+                        <RecapItem data={product} key={index}/>
+                    ))}
                 </div>
-                <div className="subTotal">
-                    <p>SOUS TOTAL <b>{total} $</b></p>
+
+                <div>
+                    <input type="text" placeholder="Code Promo"/>
+                    <button className="adventure mx-4 ajouter">Ajouter</button>
                 </div>
-                {total > 0 ? (
-                    <div className="cartButton">
-                        <button className="blue-btn adventure" onClick={() => retour('/Eshop')}>Continuer mes achats</button>
-                        <button className="blue-btn adventure">
-                            <Link to="/Eshop/OrderHistory"><span className="passerCommande">Passer la commande</span></Link>
-                        </button>
+
+                <hr className="hr"/>
+
+                <div className="occupyAll row justify-content-between">
+                    <div className="col">
+                        <p><strong>Total</strong></p>
                     </div>
-                ) : (
-                    <div className="cartButton">
-                        <h4>Vous n'avez pas passé de commande</h4>
-                        <button onClick={() => retour('/Eshop')}>Revenir au Catalogue</button>
+                    <div className="col text-end">
+                        <p>{total} €</p>
                     </div>
-                )}
+                </div>
+
+                <div className="occupyAll row justify-content-between">
+                    <div className="col">
+                        <p className="grey">Réduction</p>
+                    </div>
+                    <div className="col text-end">
+                        <p>-</p>
+                    </div>
+                </div>
+
+                <div className="occupyAll row justify-content-between">
+                    <div className="col">
+                        <p className="grey">Taxe</p>
+                    </div>
+                    <div className="col text-end">
+                        <p>-</p>
+                    </div>
+                </div>
+
+                <hr className="hr"/>
+
+                <div className="occupyAll row justify-content-between">
+                    <div className="col">
+                        <p><strong>Total</strong></p>
+                    </div>
+                    <div className="col text-end">
+                        <p><strong className="big">{total} €</strong></p>
+                    </div>
+                </div>
+
+                <div className="cartButton">
+                    <button className="purple-btn adventure" onClick={() => retour('/Eshop')}>Retourner au catalogue</button>
+                    <button className="purple-btn adventure">
+                        <Link to="/recap"><span className="passerCommande">Continuer vers le paiement</span></Link>
+                    </button>
+                </div>
+
             </div>
             <footer className="footer mt-5">
                 <div className="flex-col flex">

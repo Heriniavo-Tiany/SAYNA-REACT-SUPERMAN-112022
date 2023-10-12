@@ -118,3 +118,32 @@
     color: #FFFFFF;
     text-decoration: none ;
 }
+
+.ajouter {
+    height: 43px;
+    padding: 5px 30px;
+    background: transparent; /* Set the background to transparent */
+    border: 2px solid transparent; /* Set a transparent border initially */
+    background-clip: padding-box; /* Make sure the background doesn't extend into the padding area */
+    color: white;
+    margin-bottom: 50px;
+    border-image: linear-gradient(to right, #07338C 50%, #B4202E 100%); /* Use a linear gradient as a border image */
+    border-image-slice: 1; /* Slice the border image to fit the border */
+}
+
+.hr {
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.occupyAll {
+    width: 100%;
+}
+
+.big {
+    font-size: larger;
+}
+
+.grey {
+    color: #757575;
+}
