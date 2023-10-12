@@ -1,5 +1,6 @@
 import './styles.css';
 import Filter from "../Filter";
+import {Link} from "react-router-dom";
 
 const Catalogue = () => {
     const items = [
@@ -17,8 +18,12 @@ const Catalogue = () => {
 
     return (
         <div id="divGame">
-            <img id="arrowDown" src="./assets/Logos/flèche_down_header.png" alt=""/>
-            <img id="chevalierNoir" src="../assets/icones/flèche_down_header.png" alt=""/>
+            <img id="arrowDown" src="/assets/icones/flèche_down_header.png" alt=""/>
+            <div className="d-flex justify-content-end">
+                <Link to="Cart" className="ml-auto">
+                    <img src='/assets/icones/icone_1.png' alt="icone caddy" />
+                </Link>
+            </div>
             <br/>
             <div className="row">
                 <div className="col-md-3">
@@ -32,7 +37,7 @@ const Catalogue = () => {
                                     <img src={`${process.env.PUBLIC_URL}/assets/images/article_${index}.png`} className="card-img-top" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">{item.title}</h5>
-                                        <p className="card-text">{item.price} {item.price2}</p>
+                                        <p className="card-text">{item.price} <strike>{item.price2}</strike></p>
                                     </div>
                                 </div>
                                 <button className="demarrer">AJOUTER AU PANIER</button>
