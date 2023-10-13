@@ -88,7 +88,8 @@ const Home = () => {
 
                 <div className="vs mt-5">
                     <h1 className="white mt-5"><strong>BATMAN V SUPERMAN</strong></h1>
-                    <p className="white">Le monde n’est pas assez grand pour deux super héros. Alors que Superman se battait contre Zod,
+                    <p className="white">Le monde n’est pas assez grand pour deux super héros. Alors que Superman se
+                        battait contre Zod,
                         l’affrontement fait des dégats
                         et détruit partiellement la ville de Métropolis. Bruce Wayne alors présent dans la ville
                         assiste, impuissant, à l’effondrement de la
@@ -113,7 +114,54 @@ const Home = () => {
 
                 </div>
 
+                <div className="row">
+                    <div className="col-md-2">
+                        <img src="/assets/icones/Polygon-1.png" alt=""/>
+                    </div>
+                    <div className="col-md-8">
+                        <div className="card card1 mb-3" style={{maxWidth: '540px'}}>
+                            <div className="row g-0">
+                                <div className="col-md-4">
+                                    <img src="/assets/images/img12.png" className="img-fluid imgCard rounded-start" alt="..."/>
+                                </div>
+                                <div className="col-md-8">
+                                    <div className="card-body">
+                                        <h6 className="card-title">A c t i o n , A d v e n t u r e</h6>
+                                        <h3 className="card-title">Superman Man of Steel</h3>
+                                        <p className="card-text">Clark Kent, malgré son apparence humaine normale, est l'un
+                                            des derniers membres d'une race éteinte. Il se retrouve forcé
+                                            de révéler son identité lorsque la Terre est envahie par une
+                                            armée de survivants qui menacent détruire la planète.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-2">
+                        <img src="/assets/icones/Polygon.png" alt=""/>
+                    </div>
+                </div>
             </div>
+
+            <footer className="footer">
+                <div className="flex-col flex">
+                    <p className="white">
+                        <img src="/assets/logos/logo_0.png" alt="warner-bros"/>
+                        Ce projet respecte l’univers cinématographique des films Batman récents. Version
+                        Nolan &amp; Snyder &amp;
+                        Reeves
+                    </p>
+                    <div className="social-icons flex">
+                        <img className="logo-sayna" src="/assets/logos/logo_1.png" alt="sayna"/>
+                        <img className="x-white-3" src="/assets/logos/logo_2.png" alt="X white 3"/>
+                        <img className="vector" src="/assets/logos/logo_3.png" alt="Vector"/>
+                        <img className="icons logo-fb" src="/assets/logos/logo_4.1.png" alt="icons / facebook"/>
+                        <img className="icons logo-ig" src="/assets/logos/logo_5.png" alt="icons / instagram"/>
+                        <img className="logo-tw icons" src="/assets/logos/logo_6.png" alt="icons / twitter"/>
+                    </div>
+                </div>
+            </footer>
+
         </>
     )
 }
