@@ -5,6 +5,7 @@ import MonCompte from "./Pages/MonCompte/MonCompte";
 import Eshop from "./Pages/Eshop";
 import Cart from "./Pages/Eshop/Cart/Cart";
 import Recap from "./Pages/Eshop/Recap/Recap";
+import Paiement from "./Pages/Eshop/Paiement/Paiement";
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
                 <Route path="/" element={<Home/>}/>
                 <Route path='/eshop' element={<Eshop/>}/>
                 <Route path='/cart' element={<Cart/>}/>
-                <Route path='recap' element={<Recap/>}/>
+                <Route path='/recap' element={<Recap/>}/>
+                <Route path='/paiement' element={<Paiement/>}/>
                 <Route path='/MonCompte' element={<MonCompte/>}/>
             </Routes>
         </BrowserRouter>

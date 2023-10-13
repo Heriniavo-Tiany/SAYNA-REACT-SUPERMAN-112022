@@ -100,7 +100,7 @@ const Recap = () => {
                 <div className="cartButton">
                     <button className="purple-btn adventure" onClick={() => retour('/Eshop')}>Retourner au catalogue</button>
                     <button className="purple-btn adventure">
-                        <Link to="/recap"><span className="passerCommande">Continuer vers le paiement</span></Link>
+                        <Link to="/paiement"><span className="passerCommande">Continuer vers le paiement</span></Link>
                     </button>
                 </div>
 
