@@ -141,6 +141,9 @@ const Home = () => {
                         <img src="/assets/icones/Polygon.png" alt=""/>
                     </div>
                 </div>
+
+                <img className="my-5" src="/assets/images/img15.png" alt=""/>
+
             </div>
 
             <footer className="footer">
