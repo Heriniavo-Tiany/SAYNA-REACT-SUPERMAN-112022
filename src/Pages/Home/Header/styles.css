@@ -1,0 +1,13 @@
+.hero-home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url('/src/assets/img/img1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.xl {
+    font-size: 100px;
+}
