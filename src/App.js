@@ -1,7 +1,7 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from "./Pages/Home/Home";
-import MonCompte from "./Pages/MonCompte/MonCompte";
+import MonCompte from "./Pages/MonCompte";
 import Eshop from "./Pages/Eshop";
 import Cart from "./Pages/Eshop/Cart/Cart";
 import Recap from "./Pages/Eshop/Recap/Recap";
