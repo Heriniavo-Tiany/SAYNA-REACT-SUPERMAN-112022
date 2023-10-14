@@ -29,10 +29,10 @@ const Home = () => {
                         <img src="/assets/images/img2.png" alt="" className="personnage"/>
                     </div>
                     <div className="col-md-4">
-                        <img src="/assets/images/img2.png" alt="" className="personnage"/>
+                        <img src="/assets/images/1.png" alt="" className="personnage"/>
                     </div>
                     <div className="col-md-4">
-                        <img src="/assets/images/img2.png" alt="" className="personnage"/>
+                        <img src="/assets/images/2.png" alt="" className="personnage"/>
                     </div>
                 </div>
 
