@@ -115,9 +115,10 @@ const Home = () => {
                 </div>
 
                 <div className="row">
-                    <div className="col-md-2">
+                    <div className="col-md-2 d-flex align-items-center justify-content-center">
                         <img src="/assets/icones/Polygon-1.png" alt=""/>
                     </div>
+
                     <div className="col-md-8">
                         <div className="card card1 mb-3" style={{maxWidth: '540px'}}>
                             <div className="row g-0">
@@ -137,7 +138,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-2">
+                    <div className="col-md-2 d-flex align-items-center justify-content-center">
                         <img src="/assets/icones/Polygon.png" alt=""/>
                     </div>
                 </div>

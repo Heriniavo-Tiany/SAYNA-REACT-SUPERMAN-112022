@@ -38,3 +38,11 @@
 html {
     scroll-behavior: smooth;
 }
+
+.icons {
+    color: white;
+}
+
+.icons :hover {
+    color: #FFFF00;
+}
